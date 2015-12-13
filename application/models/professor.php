@@ -1,11 +1,11 @@
 <?php
-    Class Admin extends CI_Model{
+    Class Professor extends CI_Model{
 
         function login($username, $password){
             $this -> db -> select('*');
             $this -> db -> from('professors');
             $this -> db -> where('professor_username', $username);
-            $this -> db -> where('profesor_password', $password);
+            $this -> db -> where('professor_password', $password);
             $this -> db -> limit(1);
 
             $query = $this -> db -> get();
