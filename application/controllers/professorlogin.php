@@ -5,6 +5,7 @@
 		function __construct(){
 		   parent::__construct();
 		   $this->load->helper(array('form'));
+           $this->load->library('session');
 		}
 
 		function index(){
@@ -23,6 +24,21 @@
             	$this->load->view('/template/professor/professor_footer');
             }
 		}
+
+
+        function access_code(){
+            $chars ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+            $string =''; // define variable with empty value
+            // we generate a random integer first, then we are getting corresponding character , then append the character to $string variable. we are repeating this cycle until it reaches the given length 
+            for($i=0;$i<5; $i++) {
+                $string .= $chars[rand(0,strlen($chars)-1)];
+ 
+            }
+            $data['string'] = $string;
+            $this->session->set_flashdata('string', $string);
+
+            $this->load->view('professor/access_code', $data);
+        }
 
 	}
 

@@ -14,21 +14,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" > <b>Manage <span class="caret"></span></b></a>
-                    <ul class="dropdown-menu">
-                        <?php 
-
-                        ?>
-
-                        <li><a href="<?php echo base_url('adminhome/students') ?>">Student</a></li>
-                        <li><a href="<?php echo base_url('adminhome/courses') ?>">Courses</a></li>
-                        <li><a href="<?php echo base_url('adminhome/professors') ?>">Professors</a></li>
-                        <li><a href="<?php echo base_url('adminhome/schedules') ?>">Schedules</a></li>
-                    </ul>
-                </li>
-                <li><a href="<?php echo base_url('adminhome/students_courses') ?>"><b>Students & Courses</b></a></li>
-                <li><a href="<?php echo base_url('adminhome/profs_courses') ?>"><b>Professors & Courses</b></a></li>
+            
             </ul>
          
             <ul class="nav navbar-nav navbar-right">

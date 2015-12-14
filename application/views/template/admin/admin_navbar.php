@@ -33,7 +33,7 @@
          
             <ul class="nav navbar-nav navbar-right">
                 <li><a href=""><b><?php echo $username ?></b></a></li>        
-                <li><a href="<?php echo base_url('studentlogout') ?>"><b>Logout</b></a></li>
+                <li><a href="<?php echo base_url('adminlogout') ?>"><b>Logout</b></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

@@ -7,7 +7,8 @@
         <link rel="shortcut icon" type="image/x-icon" href="<?=base_url('img/logo.ico')?>">
 
         <?php echo link_tag(base_url() . 'assets/css/bootstrap.min.css')?>
-        
+        <?php echo link_tag(base_url() . 'resources/dialog.css')?>
+
         <title><?php echo $title ?></title>
 
     </head>
